@@ -1,0 +1,28 @@
+{
+  "name": "aoc2022",
+  "version": "1.0.0",
+  "description": "Advent Of Code 2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "execute": "npx tsc && node dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulsiersma/aoc2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulsiersma/aoc2022/issues"
+  },
+  "homepage": "https://github.com/paulsiersma/aoc2022#readme",
+  "devDependencies": {
+    "@types/lodash": "^4.14.191",
+    "earljs": "^0.2.3",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
