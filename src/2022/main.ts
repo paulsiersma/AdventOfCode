@@ -26,5 +26,5 @@ function testAndSolve(id: string, solve: (string) => number, testInputId: string
 }
 
 function getInputPath(id: string) {
-    return path.join(path.resolve(), `inputs\\${id}.txt`);
+    return path.join(path.resolve(), `src\\2022\\inputs\\${id}.txt`);
 }
