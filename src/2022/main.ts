@@ -17,14 +17,20 @@ import { expect } from 'earljs'
 // testAndSolve("Day 4 Part 1", solve4_1, "day4_test1", "day4_1", 2)
 // testAndSolve("Day 4 Part 2", solve4_2, "day4_test1", "day4_1", 4)
 
-import { solve5_1, solve5_2 } from "./day5";
-testAndSolve("Day 5 Part 1", solve5_1, "day5_test1", "day5_1", "CMZ")
-testAndSolve("Day 5 Part 2", solve5_2, "day5_test1", "day5_1", "MCD")
+// import { solve5_1, solve5_2 } from "./day5";
+// testAndSolve("Day 5 Part 1", solve5_1, "day5_test1", "day5_1", "CMZ")
+// testAndSolve("Day 5 Part 2", solve5_2, "day5_test1", "day5_1", "MCD")
 
+//import { solve6_1, solve6_2 } from "./day6";
+//testAndSolve("Day 6 Part 1", solve6_1, [["day6_test1", 7],["day6_test2", 5],["day6_test3", 6]], "day6_1")
+//testAndSolve("Day 6 Part 2", solve6_2, [["day6_test1", 19],["day6_test2", 23],["day6_test3", 23]], "day6_1")
 
-
-function testAndSolve(id: string, solve: (inputPath: string) => any, testInputId: string, inputId: string, solveTestInputAnswer: any) {
-    expect(solve(getInputPath(testInputId))).toEqual(solveTestInputAnswer);
+function testAndSolve(id: string, solve: (inputPath: string) => any, testCases: any[][], inputId: string) {
+    testCases.forEach(testCase => {
+        const testInputId = testCase[0];
+        const solveTestInputAnswer = testCase[1];
+        expect(solve(getInputPath(testInputId))).toEqual(solveTestInputAnswer);
+    })
     console.log(`${id}:`, solve(getInputPath(inputId)));
 }
 
