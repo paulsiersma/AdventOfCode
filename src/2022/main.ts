@@ -25,6 +25,10 @@ import { expect } from 'earljs'
 //testAndSolve("Day 6 Part 1", solve6_1, [["day6_test1", 7],["day6_test2", 5],["day6_test3", 6]], "day6_1")
 //testAndSolve("Day 6 Part 2", solve6_2, [["day6_test1", 19],["day6_test2", 23],["day6_test3", 23]], "day6_1")
 
+import { solve7_1, solve7_2 } from "./day7";
+testAndSolve("Day 7 Part 1", solve7_1, [["day7_test1", 95437]], "day7_1")
+testAndSolve("Day 7 Part 2", solve7_2, [["day7_test1", 24933642]], "day7_1")
+
 function testAndSolve(id: string, solve: (inputPath: string) => any, testCases: any[][], inputId: string) {
     testCases.forEach(testCase => {
         const testInputId = testCase[0];
